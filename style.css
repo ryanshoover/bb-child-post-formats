@@ -1,0 +1,67 @@
+/*
+Theme Name: Beaver Builder Child Theme
+Theme URI: http://www.wpbeaverbuilder.com
+Version: 1.0
+Description: A BB Child Theme with post formats
+Author: Ryan Hoover
+Author URI: https://ryan.hoover.ws;
+template: bb-theme
+*/
+
+.fl-post-format-quote {
+	position: relative;
+	overflow: hidden;
+	font-size: 2em;
+	padding: 30px;
+	border: 0 solid #ccc;
+	border-width: 1px 0;
+	box-shadow: inset 0px 0px 30px 5px #eee;
+	transition: all 0.2s ease-in-out;
+}
+
+.fl-post-format-quote::before {
+	position: absolute;
+	display: block;
+	top: 0px;
+	left: -4px;
+	content: '\f10d';
+	font: 40px/1 fontawesome;
+	opacity: 0.5;
+}
+
+.fl-post-format-quote::after {
+	position: absolute;
+	display: block;
+	bottom: -2px;
+	right: -4px;
+	content: '\f10e';
+	font: 40px/1 fontawesome;
+	opacity: 0.5;
+}
+
+.post_format-post-format-quote .fl-post-thumb a {
+	color: #333;
+	text-decoration: none;
+}
+
+.post_format-post-format-quote .fl-post-thumb a:hover,
+.post_format-post-format-quote .fl-post-thumb a:focus {
+	text-decoration: none;
+}
+
+.post_format-post-format-quote .fl-post-thumb a:hover .fl-post-format-quote,
+.post_format-post-format-quote .fl-post-thumb a:focus .fl-post-format-quote {
+	box-shadow: inset 0px 0px 30px 5px #ddd;
+}
+
+.post_format-post-format-gallery .fl-mosaicflow-col {
+	float:left;
+}
+
+.post_format-post-format-gallery .fl-mosaicflow {
+	margin-left: -20px;
+}
+
+.post_format-post-format-gallery .fl-mosaicflow-item {
+	margin: 0 0 20px 20px;
+}
